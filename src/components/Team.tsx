@@ -20,15 +20,9 @@ const teamMembers = [
     image: team2,
   },
   {
-    name: 'Grace Kalala',
-    role: 'Analyste de Données',
-    description: 'Transforme les données brutes en insights stratégiques pour nos clients.',
-    image: team3,
-  },
-  {
     name: 'Ir Lucas Kasereka',
-    role: 'Spécialiste SIG & Fondateur',
-    description: 'Expert en cartographie, SIG et fondateur d\'InfoTECH.',
+    role: 'Spécialiste SIG, Analyste de Données & Fondateur',
+    description: 'Expert en cartographie, SIG, analyse de données et fondateur d\'InfoTECH.',
     image: founderImage,
   },
   {
