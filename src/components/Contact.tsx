@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Localisation',
-    value: 'République Démocratique du Congo',
+    value: 'Ville de BUNIA, Ituri – RDC',
     link: null,
     color: 'bg-accent',
   },
