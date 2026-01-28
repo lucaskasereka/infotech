@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Bottom Border */}
         <div className="mt-8 pt-6 border-t border-primary-foreground/10 text-center">
           <p className="text-xs text-primary-foreground/40">
-            Tous droits réservés. Conçu avec passion à Kinshasa, RDC.
+            Tous droits réservés. Conçu avec passion à BUNIA, Ituri – République Démocratique du Congo.
           </p>
         </div>
       </div>
