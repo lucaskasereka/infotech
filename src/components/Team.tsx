@@ -4,9 +4,11 @@ import team3 from '@/assets/team-3.jpg';
 import team4 from '@/assets/team-4.jpg';
 import team5 from '@/assets/team-5.jpg';
 
+import founderImage from '@/assets/founder.jpg';
+
 const teamMembers = [
   {
-    name: 'Sarah Mbombo',
+    name: 'Ir Christelle ANGOZO',
     role: 'Responsable IT',
     description: 'Experte en gestion de projets technologiques et coordination d\'équipe.',
     image: team1,
@@ -24,10 +26,10 @@ const teamMembers = [
     image: team3,
   },
   {
-    name: 'Jean-Pierre Mukendi',
-    role: 'Spécialiste SIG',
-    description: 'Expert en cartographie et systèmes d\'information géographique.',
-    image: team4,
+    name: 'Ir Lucas Kasereka',
+    role: 'Spécialiste SIG & Fondateur',
+    description: 'Expert en cartographie, SIG et fondateur d\'InfoTECH.',
+    image: founderImage,
   },
   {
     name: 'Esther Kasongo',
