@@ -39,23 +39,7 @@ const Hero = () => {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1">
-            Des solutions numériques{' '}
-            <span className="relative">
-              intelligentes
-              <svg
-                className="absolute -bottom-2 left-0 w-full"
-                viewBox="0 0 300 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2 10C50 4 100 2 150 4C200 6 250 8 298 2"
-                  stroke="hsl(var(--accent))"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </span>{' '}
+            Des solutions numériques intelligentes
             <br className="hidden sm:block" />
             pour les professionnels modernes
           </h1>
