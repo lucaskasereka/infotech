@@ -8,6 +8,12 @@ import founderImage from '@/assets/founder.jpg';
 
 const teamMembers = [
   {
+    name: 'Ir Lucas Kasereka',
+    role: 'Spécialiste SIG, Analyste de Données & Fondateur',
+    description: 'Expert en cartographie, SIG, analyse de données et fondateur d\'InfoTECH.',
+    image: founderImage,
+  },
+  {
     name: 'Ir Christelle ANGOZO',
     role: 'Responsable IT',
     description: 'Experte en gestion de projets technologiques et coordination d\'équipe.',
@@ -18,12 +24,6 @@ const teamMembers = [
     role: 'Développeur Web',
     description: 'Spécialiste React et applications web modernes, passionné par le code propre.',
     image: team2,
-  },
-  {
-    name: 'Ir Lucas Kasereka',
-    role: 'Spécialiste SIG, Analyste de Données & Fondateur',
-    description: 'Expert en cartographie, SIG, analyse de données et fondateur d\'InfoTECH.',
-    image: founderImage,
   },
   {
     name: 'Esther Kasongo',
