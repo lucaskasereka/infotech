@@ -60,7 +60,7 @@ const Team = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image */}
-              <div className="relative overflow-hidden aspect-[4/5]">
+              <div className="relative overflow-hidden aspect-[4/4]">
                 <img
                   src={member.image}
                   alt={member.name}
