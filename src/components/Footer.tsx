@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-xl font-bold">
                 Info<span className="text-accent">TECH</span>
               </span>
-              <p className="text-xs text-primary-foreground/60">Solutions intelligentes</p>
+              <p className="text-xs text-accent">Solutions intelligentes</p>
             </div>
           </div>
 

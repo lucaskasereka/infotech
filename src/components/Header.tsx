@@ -52,7 +52,7 @@ const Header = () => {
               <span className="text-xl font-bold text-foreground">
                 Info<span className="text-primary">TECH</span>
               </span>
-              <span className="text-xs text-muted-foreground -mt-1">Solutions intelligentes</span>
+              <span className="text-xs text-accent -mt-1">Solutions intelligentes</span>
             </div>
           </a>
 
