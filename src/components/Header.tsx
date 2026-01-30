@@ -5,7 +5,7 @@ import logo from '@/assets/logo.png';
 const navLinks = [
   { name: 'Accueil', href: '#accueil' },
   { name: 'Services', href: '#services' },
-  { name: 'Notre Équipe', href: '#equipe' },
+  { name: 'La Team', href: '#equipe' },
   { name: 'À propos', href: '#apropos' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -35,8 +35,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-card/95 backdrop-blur-md shadow-lg py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-card/98 backdrop-blur-lg shadow-xl border-b border-border/50 py-3'
+          : 'bg-card/60 backdrop-blur-sm py-5'
       }`}
     >
       <div className="container-custom">
