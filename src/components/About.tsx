@@ -81,7 +81,7 @@ const About = () => {
                 <img
                   src={founderImage}
                   alt="Ir Lucas Kasereka - Fondateur d'InfoTECH"
-                  className="w-full aspect-[4/5] object-cover"
+                  className="w-full aspect-[3/4] object-cover"
                 />
                 <div className="p-6 text-center bg-gradient-to-t from-card via-card to-transparent">
                   <h3 className="text-2xl font-bold text-foreground mb-1">
