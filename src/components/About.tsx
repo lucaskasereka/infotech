@@ -75,22 +75,22 @@ const About = () => {
           </div>
 
           {/* Right Content - Founder */}
-          <div className="relative">
-            <div className="relative z-10">
-              <div className="card-elevated overflow-hidden">
+          <div className="relative flex justify-center">
+            <div className="relative z-10 max-w-xs">
+              <div className="card-elevated overflow-hidden rounded-xl">
                 <img
                   src={founderImage}
                   alt="Ir Lucas Kasereka - Fondateur d'InfoTECH"
                   className="w-full aspect-[3/4] object-cover"
                 />
-                <div className="p-6 text-center bg-gradient-to-t from-card via-card to-transparent">
-                  <h3 className="text-2xl font-bold text-foreground mb-1">
+                <div className="p-4 text-center bg-gradient-to-t from-card via-card to-transparent">
+                  <h3 className="text-xl font-bold text-foreground mb-1">
                     Ir Lucas Kasereka
                   </h3>
-                  <p className="text-primary font-semibold mb-2">
+                  <p className="text-primary font-semibold text-sm mb-2">
                     Fondateur & Informaticien Professionnel
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground">
                     Passionné par la technologie et l'innovation, Lucas dirige InfoTECH 
                     avec la vision de démocratiser l'accès aux solutions numériques.
                   </p>
@@ -99,8 +99,8 @@ const About = () => {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-accent/20 rounded-full blur-2xl" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
           </div>
         </div>
       </div>
