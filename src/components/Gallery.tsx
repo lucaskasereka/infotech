@@ -81,9 +81,9 @@ const Gallery = () => {
         </div>
 
         {/* Main Carousel */}
-        <div className="relative max-w-4xl mx-auto" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className="relative max-w-2xl mx-auto" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           {/* Main Image */}
-          <div className="relative overflow-hidden rounded-2xl shadow-xl bg-card aspect-[16/10]">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-card aspect-[16/10]">
             <div className="flex transition-transform duration-500 ease-out h-full" style={{
             transform: `translateX(-${currentIndex * 100}%)`
           }}>
@@ -91,42 +91,42 @@ const Gallery = () => {
                   <img src={image.src} alt={image.title} className="w-full h-full object-cover" />
                   {/* Overlay with info */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end">
-                    <div className="p-6 text-white">
-                      <h3 className="text-xl font-bold mb-1">{image.title}</h3>
-                      <p className="text-white/80 text-sm">{image.description}</p>
+                    <div className="p-4 text-white">
+                      <h3 className="text-lg font-bold mb-1">{image.title}</h3>
+                      <p className="text-white/80 text-xs">{image.description}</p>
                     </div>
                   </div>
                 </div>)}
             </div>
 
             {/* Navigation Arrows */}
-            <button onClick={goToPrevious} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-lg" aria-label="Image précédente">
-              <ChevronLeft className="w-6 h-6" />
+            <button onClick={goToPrevious} className="absolute left-3 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-md" aria-label="Image précédente">
+              <ChevronLeft className="w-5 h-5" />
             </button>
-            <button onClick={goToNext} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-lg" aria-label="Image suivante">
-              <ChevronRight className="w-6 h-6" />
+            <button onClick={goToNext} className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-md" aria-label="Image suivante">
+              <ChevronRight className="w-5 h-5" />
             </button>
 
             {/* Play/Pause Button */}
-            <button onClick={() => setIsPaused(!isPaused)} className="absolute top-4 right-4 p-2 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-lg" aria-label={isPaused ? 'Reprendre' : 'Pause'}>
-              {isPaused ? <Play className="w-5 h-5" /> : <Pause className="w-5 h-5" />}
+            <button onClick={() => setIsPaused(!isPaused)} className="absolute top-3 right-3 p-1.5 rounded-full bg-card/90 text-foreground hover:bg-card transition-colors shadow-md" aria-label={isPaused ? 'Reprendre' : 'Pause'}>
+              {isPaused ? <Play className="w-4 h-4" /> : <Pause className="w-4 h-4" />}
             </button>
 
             {/* Pause indicator when hovered */}
-            {isHovered && !isPaused && <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-card/90 text-foreground text-xs font-medium">
+            {isHovered && !isPaused && <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-card/90 text-foreground text-xs font-medium">
                 ⏸ En pause
               </div>}
           </div>
 
           {/* Dots Navigation */}
-          <div className="flex justify-center gap-2 mt-6">
-            {galleryImages.map((_, index) => <button key={index} onClick={() => goToSlide(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-primary w-8' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} aria-label={`Aller à l'image ${index + 1}`} />)}
+          <div className="flex justify-center gap-1.5 mt-4">
+            {galleryImages.map((_, index) => <button key={index} onClick={() => goToSlide(index)} className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-primary w-6' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} aria-label={`Aller à l'image ${index + 1}`} />)}
           </div>
         </div>
 
         {/* Thumbnail Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 mt-8 max-w-4xl mx-auto">
-          {galleryImages.map((image, index) => <button key={image.id} onClick={() => goToSlide(index)} className={`relative overflow-hidden rounded-lg aspect-square transition-all duration-300 ${index === currentIndex ? 'ring-2 ring-primary ring-offset-2 ring-offset-background scale-105' : 'opacity-60 hover:opacity-100'}`}>
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 mt-6 max-w-2xl mx-auto">
+          {galleryImages.map((image, index) => <button key={image.id} onClick={() => goToSlide(index)} className={`relative overflow-hidden rounded-md aspect-square transition-all duration-300 ${index === currentIndex ? 'ring-2 ring-primary ring-offset-2 ring-offset-background scale-105' : 'opacity-60 hover:opacity-100'}`}>
               <img src={image.src} alt={image.title} className="w-full h-full object-cover" />
             </button>)}
         </div>
