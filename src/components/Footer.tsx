@@ -1,5 +1,5 @@
 import { MessageCircle, Mail } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logoIcon from '@/assets/logo-icon.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
             <img
-              src={logo}
-              alt="InfoTECH Logo"
+             src={logoIcon}
+             alt="Logo InfoTECH"
               className="w-10 h-10 object-contain"
             />
             <div>
