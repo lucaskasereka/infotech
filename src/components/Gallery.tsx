@@ -107,12 +107,6 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Thumbnail Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 mt-6 max-w-2xl mx-auto">
-          {galleryImages.map((image, index) => <button key={image.id} onClick={() => goToSlide(index)} className={`relative overflow-hidden rounded-md aspect-square transition-all duration-300 ${index === currentIndex ? 'ring-2 ring-primary ring-offset-2 ring-offset-background scale-105' : 'opacity-60 hover:opacity-100'}`}>
-              <img src={image.src} alt={image.title} className="w-full h-full object-cover" />
-            </button>)}
-        </div>
       </div>
     </section>;
 };
