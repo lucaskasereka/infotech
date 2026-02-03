@@ -69,18 +69,6 @@ const Gallery = () => {
   };
   return <section id="galerie" className="section-padding bg-background">
       <div className="container-custom">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-            Notre Galerie
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nos <span className="text-primary">Réalisations</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez quelques-unes de nos réalisations et projets accomplis pour nos clients.
-          </p>
-        </div>
 
         {/* Main Carousel */}
         <div className="relative max-w-2xl mx-auto" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
@@ -91,13 +79,6 @@ const Gallery = () => {
           }}>
               {galleryImages.map(image => <div key={image.id} className="min-w-full h-full relative">
                   <img src={image.src} alt={image.title} className="w-full h-full object-cover" />
-                  {/* Overlay with info */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end">
-                    <div className="p-4 text-white">
-                      <h3 className="text-lg font-bold mb-1">{image.title}</h3>
-                      <p className="text-white/80 text-xs">{image.description}</p>
-                    </div>
-                  </div>
                 </div>)}
             </div>
 
