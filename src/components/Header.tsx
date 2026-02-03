@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logoIcon from '@/assets/logo-icon.png';
+import logo from '@/assets/logo.png';
 
 const navLinks = [
   { name: 'Accueil', href: '#accueil' },
@@ -45,8 +45,8 @@ const Header = () => {
           {/* Logo */}
           <a href="#accueil" className="flex items-center gap-3 group">
             <img
-              src={logoIcon}
-              alt="Logo InfoTECH"
+              src={logo}
+              alt="InfoTECH Logo"
               className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
             />
             <div className="flex flex-col">
