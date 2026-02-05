@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import promoVideo from '@/assets/promo-video.mp4';
+import gallery1 from '@/assets/gallery-1.jpeg';
+import gallery2 from '@/assets/gallery-2.jpeg';
 
 // Gallery items - video first, then images
 const galleryItems = [{
@@ -11,30 +13,40 @@ const galleryItems = [{
 }, {
   id: 1,
   type: 'image' as const,
+  src: gallery1,
+  title: 'Studio 1'
+}, {
+  id: 2,
+  type: 'image' as const,
+  src: gallery2,
+  title: 'Studio 2'
+}, {
+  id: 3,
+  type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
   title: 'Développement Web'
 }, {
-  id: 2,
+  id: 4,
   type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
   title: 'Dashboard Analytics'
 }, {
-  id: 3,
+  id: 5,
   type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop',
   title: 'Collaboration Équipe'
 }, {
-  id: 4,
+  id: 6,
   type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop',
   title: 'Développement Mobile'
 }, {
-  id: 5,
+  id: 7,
   type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1555421689-d68471e189f2?w=800&h=600&fit=crop',
   title: 'E-Commerce'
 }, {
-  id: 6,
+  id: 8,
   type: 'image' as const,
   src: 'https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=800&h=600&fit=crop',
   title: 'Formation IT'
