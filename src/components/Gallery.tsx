@@ -93,7 +93,7 @@ const Gallery = () => {
         {/* Main Carousel */}
         <div className="relative max-w-2xl mx-auto" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           {/* Main Image/Video */}
-          <div className="relative overflow-hidden rounded-xl shadow-lg bg-card aspect-[16/10]">
+          <div className="relative overflow-hidden rounded-xl shadow-lg bg-card aspect-[3/4]">
             <div className="flex transition-transform duration-500 ease-out h-full" style={{
             transform: `translateX(-${currentIndex * 100}%)`
           }}>
