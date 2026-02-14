@@ -19,7 +19,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/80 to-accent/50" />
       </div>
 
       {/* Animated Background Elements */}

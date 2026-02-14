@@ -51,7 +51,7 @@ const Header = () => {
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">
-                Info<span className="text-primary">TECH</span>
+                Info<span className="text-accent">TECH</span>
               </span>
               <span className="text-xs text-accent -mt-1">Solutions intelligentes</span>
             </div>
