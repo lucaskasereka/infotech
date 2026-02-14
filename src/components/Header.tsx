@@ -47,13 +47,13 @@ const Header = () => {
             <img
               src={logo}
               alt="InfoTECH Logo"
-              className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+              className="w-10 h-10 object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-primary">
                 Info<span className="text-accent-dark">TECH</span>
               </span>
-              <span className="text-xs font-semibold text-primary -mt-1">Solutions intelligentes</span>
+              <span className="text-xs font-semibold text-warm -mt-1">Solutions intelligentes</span>
             </div>
           </a>
 
