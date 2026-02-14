@@ -20,6 +20,10 @@
     --accent-light: 200 90% 65%;
     --accent-dark: 200 90% 45%;
     
+    /* Warm Accent - Orange */
+    --warm: 30 95% 55%;
+    --warm-foreground: 0 0% 100%;
+    
     /* Backgrounds */
     --background: 215 25% 97%;
     --foreground: 215 30% 10%;
