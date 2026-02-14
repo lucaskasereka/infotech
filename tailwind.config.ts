@@ -49,6 +49,7 @@ export default {
         warm: {
           DEFAULT: "hsl(var(--warm))",
           foreground: "hsl(var(--warm-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
