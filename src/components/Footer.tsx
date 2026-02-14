@@ -13,13 +13,13 @@ const Footer = () => {
             <img
               src={logo}
               alt="InfoTECH Logo"
-              className="w-10 h-10 object-contain"
+              className="w-10 h-10 object-contain rounded-full"
             />
             <div>
               <span className="text-xl font-bold">
                 Info<span className="text-accent">TECH</span>
               </span>
-              <p className="text-xs text-accent">Solutions intelligentes</p>
+              <p className="text-xs text-warm">Solutions intelligentes</p>
             </div>
           </div>
 
